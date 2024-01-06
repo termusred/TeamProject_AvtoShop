@@ -1,0 +1,324 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root {
+    --text: white;
+    --singup: #FE8400;
+    --singuphover: #cc6900;
+    --sectionbg1: url(https://hips.hearstapps.com/hmg-prod/images/2022-rolls-royce-ghost-black-badge-106-16354gg-1644077188.jpeg?crop=0.455xw:0.683xh;0.0529xw,0.231xh&resize=640:*);
+    --sectionbg2: url(img/avtoshop_bg2.png);
+    --buynowbg: #FFE4C6;
+}
+body {
+    background: rgb(31, 31, 31);
+}
+.con2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28rem;
+    margin-right: 10rem;
+}
+.singup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 10rem;
+    border: 0px;
+    color: black;
+    background-color: var(--singup);
+}
+.singup:hover {
+    background-color: var(--singuphover);
+}
+.logo {
+    width: 8rem;
+    height: 6rem;
+    background-size: contain;
+    background-image: url(img/avtoshop.png);
+}
+nav {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+.break {
+    transform: scaleY(1.4);
+    color: var(--text);
+    cursor: default;
+}
+.nav-text {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text);
+}
+.break-btn {
+    transform: scaleY(1.4);
+}
+section > .con1 {
+    width: 40%;
+    height: 742px;
+    flex-shrink: 0;
+    background: #141414;
+}
+section > .con2 {
+    width: 60%;
+    height: 742px;
+    flex-shrink: 0;
+    animation: change 12s infinite;
+}   
+@keyframes change {
+    0%{
+        background-image: var(--sectionbg1);
+        background-size: cover;
+    }
+    25% {
+        background-image: var(--sectionbg2);
+        background-size: cover;
+    }
+    50% {
+        background-image: var(--sectionbg1);
+        background-size: cover;
+    }
+    75%{
+        background-image: var(--sectionbg2);
+        background-size: cover;
+    }
+    100% {
+        background-image: var(--sectionbg1);
+        background-size: cover;
+    }
+}
+section {
+    display: flex;
+}
+/* скролл не будет виден */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.great {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    width: 100vw;
+    height: 20rem;
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    background: rgba(0, 0, 0, 0.699);
+}
+.greattext {
+    margin-top: 1rem;
+}
+.undergreat{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 20rem;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 166.667% */
+}
+.text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.box {
+    margin-top: 10rem;
+    height: 36rem;
+    width: 100vw;
+    background-color: #141414;
+}
+.reasontitel {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-family: Poppins !important;
+    font-size: 1.125rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: 2rem !important; /* 177.778% */
+}
+.titel {
+    padding-top: 5rem;
+    text-decoration: underline orange;
+} 
+.con{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.first {
+    display: flex;
+    width: 17.3125rem;
+    height: 20.125rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.125rem;
+    margin-right: 4rem;
+    border-radius: 0.25rem;
+    background: #FFF;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.second {
+    display: flex;
+    width: 17.3125rem;
+    height: 20.125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.125rem;
+    border-radius: 0.25rem;
+    background: #FFF;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.gps {
+    margin-left: 6.5rem;
+    width: 4rem;
+    height: 4rem;
+    color: orange;
+}
+.gpstext {
+    margin-left: 6rem;
+}
+.qua {
+    margin-left: 2rem;
+}
+.up {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.down {
+    color: #575757;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: Poppins;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.reasons {
+    cursor: default;
+}
+.info {
+    display: flex;
+    margin-top: 5rem;
+    width: 100vw;
+    height: 10rem;
+    background-color: burlywood;
+}
+.info > .three , .info > .two{
+    width: 33%;
+    height: 100%;
+    margin-left: 1rem;
+}
+.info > .one {
+    width: 33%;
+    height: 100%;
+}
+.one, .two , .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one > .text , .two > .text , .three > .text {
+    color: #575757;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.b-up {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    color: white;
+}
+.card-img-top {
+    height: 10rem;
+}
+.con2 {
+    height: fit-content;
+}
+.card-title {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+.Cardinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.BestSellers {
+    height: 50rem;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+.b-down {
+    display: flex;
+    margin-left: 27rem;
+    margin-top: 6rem;
+    gap: 10rem;
+}
+.buynow {
+    height: 40rem;
+    margin-top: 20rem;
+}
+.titel {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    color: white;
+}
+.items {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 20rem;
+    background: var(--buynowbg);
+}
+.items > .up {
+    display: flex;
+    padding-top: 4rem;
+    justify-content: center;
+    gap: 4rem;
+    flex-direction: row;
+    width: 100vw;
+}
+.bu {
+    transform: scaleY(1.2) scaleX(1.3); 
+}
