@@ -1,4 +1,4 @@
-This project was made early in my learning days . I will soon update it to be on level i am right now
-
-
-it is about selling premium cars to people who need it 
+A AvtoShop website made using [HTML , CSS]
+- Status : Not finished ❎
+- Live : Not hosted
+- DM me on reddit : u/crack_eater228
